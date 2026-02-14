@@ -14,7 +14,7 @@ SRC_URI[sha256sum] = "fec6155b017d8bfc705ff21deee85a21af1dff33282f8f0727536d864a
 
 LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 
-RPROVIDES:kernel-image = "kernel-${KERNEL_IMAGETYPE}"
+RPROVIDES:${KERNEL_PACKAGE_NAME}-image = "kernel-${KERNEL_IMAGETYPE}"
 
 SRC_URI += "http://downloads.openpli.org/archive/miraclebox/broadmedia-linux-${PV}-${SRC}.tar.xz \
     file://defconfig \
