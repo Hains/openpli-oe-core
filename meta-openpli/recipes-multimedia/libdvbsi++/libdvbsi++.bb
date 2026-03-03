@@ -8,7 +8,7 @@ PV = "0.3.9+git${SRCPV}"
 PKGV = "0.3.9+git${GITPKGV}"
 
 # make the origin overridable from OE config, for local mirroring
-SRC_ORIGIN ?= "git://git.opendreambox.org/git/obi/libdvbsi++.git"
+SRC_ORIGIN ?= "git://github.com/jack2015/libdvbsi.git;protocol=https;branch=master"
 SRC_URI := "${SRC_ORIGIN} "
 
 S = "${WORKDIR}/git"
