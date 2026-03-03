@@ -9,8 +9,8 @@ inherit autotools-brokensep gitpkgv pythonnative gettext
 SRC_URI = "git://github.com/oe-alliance/AutoBouquetsMaker.git;protocol=https"
 SRC_URI_append = " file://add-dummy-boxbranding.patch"
 
-PV = "3.3+git${SRCPV}"
-PKGV = "3.3+git${GITPKGV}"
+PV = "3.4+git${SRCPV}"
+PKGV = "3.4+git${GITPKGV}"
 PR = "r0"
 
 EXTRA_OECONF = " \
