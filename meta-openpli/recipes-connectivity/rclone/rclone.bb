@@ -17,10 +17,10 @@ inherit gittag
 
 do_compile[network] = "1"
 
-PV = "1.68.0+git"
-PKGV = "1.68.0+${GITPKGVTAG}"
+PV = "1.73.5+git"
+PKGV = "${GITPKGVTAG}"
 
-SRC_URI = "git://github.com/rclone/rclone;protocol=https;branch=master \
+SRC_URI = "git://github.com/rclone/rclone;protocol=https;branch=v1.73-stable \
            file://rclonefs"
 
 # This build uses go, which will download modules and, by default,
@@ -30,6 +30,8 @@ SRC_URI = "git://github.com/rclone/rclone;protocol=https;branch=master \
 
 GOPATH = "${TMPDIR}/go/"
 export GOPATH
+
+TARGET_CC_ARCH += "${LDFLAGS}"
 
 do_compile() {
     GOPROXY=https://proxy.golang.org,direct
@@ -45,4 +47,4 @@ do_install() {
     ln -sf rclone ${D}${bindir}/mount.rclone
 }
 
-INSANE_SKIP:${PN} = "ldflags"
+ERROR_QA:remove = "textrel"
