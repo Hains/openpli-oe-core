@@ -4,6 +4,7 @@ SRC_URI += "file://importlib.patch"
 inherit python3-dir
 
 FILES:${PN}-src += " \
+    ${libdir}/${PYTHON_DIR}/*.py \
     ${libdir}/${PYTHON_DIR}/*/*.py \
     ${libdir}/${PYTHON_DIR}/*/*/*.py \
     ${libdir}/${PYTHON_DIR}/*/*/*/*.py \
@@ -83,7 +84,8 @@ python(){
 
         # Add cached files
         if include_pycs == '1':
-             d.appendVar('FILES:' + pypackage, ' ' + value + 'c')
+            for value in python_manifest[key]['cached']:
+                d.appendVar('FILES:' + pypackage, ' ' + value.replace("__pycache__/", "").replace(".*", ""))
 
         for value in python_manifest[key]['rdepends']:
             # Make it work with or without $PN
@@ -104,4 +106,3 @@ python(){
     d.setVar('ALLOW_EMPTY:${PN}-modules', '1')
     d.setVar('ALLOW_EMPTY:${PN}-pkgutil', '1')
 }
-
