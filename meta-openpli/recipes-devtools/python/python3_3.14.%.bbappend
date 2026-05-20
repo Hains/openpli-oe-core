@@ -106,3 +106,5 @@ python(){
     d.setVar('ALLOW_EMPTY:${PN}-modules', '1')
     d.setVar('ALLOW_EMPTY:${PN}-pkgutil', '1')
 }
+
+ALLOW_EMPTY:${PN}-stringold = "1"
