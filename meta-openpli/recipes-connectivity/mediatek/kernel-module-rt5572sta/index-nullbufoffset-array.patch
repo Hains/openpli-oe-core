@@ -1,0 +1,13 @@
+diff --git a/common/cmm_data.c b/common/cmm_data.c
+index 3d86e5e..af3f71d 100644
+--- a/common/cmm_data.c
++++ b/common/cmm_data.c
+@@ -3147,7 +3147,7 @@ VOID RtmpPrepareHwNullFrame(
+ 				
+ 			ptr += 4;
+ 		
+-			RTMP_IO_READ32(pAd, pAd->NullBufOffset + TXWISize+ i, &longValue);
++			RTMP_IO_READ32(pAd, pAd->NullBufOffset[0] + TXWISize+ i, &longValue);
+ 			hex_dump("null frame after", &longValue, 4);
+ 		}
+ 	}

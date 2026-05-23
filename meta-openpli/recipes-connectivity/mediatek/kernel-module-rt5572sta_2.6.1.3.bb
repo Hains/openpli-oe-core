@@ -11,6 +11,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 SRC_URI = " \
           file://rt5572_2.6.1.4.tar.gz \
           file://remove_linux_2_4_compability.patch \
+          file://index-nullbufoffset-array.patch \
           "
 
 SRC_URI[md5sum] = "88d11654985e8da2101bc92d4fa00340"
@@ -20,7 +21,7 @@ FILES:${PN}:append = "${sysconfdir}/Wireless"
 
 S = "${UNPACKDIR}/RT5572"
 
-EXTRA_OEMAKE = 'LINUX_SRC=${STAGING_KERNEL_DIR} KDIR=${STAGING_KERNEL_DIR} KCFLAGS+="-Wno-error=incompatible-pointer-types -Wno-error=int-conversion"'
+EXTRA_OEMAKE = 'LINUX_SRC=${STAGING_KERNEL_DIR} KDIR=${STAGING_KERNEL_DIR} KCFLAGS+="-Wno-error=incompatible-pointer-types"'
 
 do_install() {
     install -d ${D}${nonarch_base_libdir}/modules/${KERNEL_VERSION}/kernel/drivers/net/wireless
