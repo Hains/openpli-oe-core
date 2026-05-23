@@ -12,6 +12,7 @@ SRC_URI = " \
           file://DPO_MT7601U_LinuxSTA_3.0.0.4_20130913c.zip \
           file://mt7601u.patch \
           file://remove_linux_2_4_compability.patch \
+          file://return-unseccessful.patch \
           "
 
 SRC_URI[md5sum] = "0b6d799d007de1594d8ae5bd34165341"
@@ -30,5 +31,3 @@ do_install() {
     install -m 0644 ${S}/RT2870STA.dat ${D}${sysconfdir}/Wireless/MT7601U/MT7601U.dat
     install -m 0644 ${S}/RT2870STACard.dat ${D}${sysconfdir}/Wireless/MT7601U/MT7601UCard.dat
 }
-
-

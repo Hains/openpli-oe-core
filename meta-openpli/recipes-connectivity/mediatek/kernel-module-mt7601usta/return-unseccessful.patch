@@ -1,0 +1,13 @@
+diff --git a/chips/mt7601.c b/chips/mt7601.c
+index e38a6c6..9cf2212 100644
+--- a/chips/mt7601.c
++++ b/chips/mt7601.c
+@@ -1494,7 +1494,7 @@ NTSTATUS MT7601DisableTxRx(
+ 	UINT32 MaxRetry;
+ 
+ 	if (!IS_MT7601(pAd))
+-		return;
++		return STATUS_UNSUCCESSFUL;
+ 
+ 	DBGPRINT(RT_DEBUG_TRACE, ("----> %s\n", __FUNCTION__));
+ 
