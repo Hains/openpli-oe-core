@@ -20,7 +20,7 @@ FILES:${PN}:append = "${sysconfdir}/Wireless"
 
 S = "${UNPACKDIR}/RT5572"
 
-EXTRA_OEMAKE = 'LINUX_SRC=${STAGING_KERNEL_DIR} KDIR=${STAGING_KERNEL_DIR} KCFLAGS="-Wno-error=incompatible-pointer-types"'
+EXTRA_OEMAKE = 'LINUX_SRC=${STAGING_KERNEL_DIR} KDIR=${STAGING_KERNEL_DIR} KCFLAGS+="-Wno-error=incompatible-pointer-types -Wno-error=int-conversion"'
 
 do_install() {
     install -d ${D}${nonarch_base_libdir}/modules/${KERNEL_VERSION}/kernel/drivers/net/wireless
@@ -29,4 +29,3 @@ do_install() {
     install -m 0644 ${S}/RT2870STA.dat ${D}${sysconfdir}/Wireless/RT5572STA/RT5572STA.dat
     install -m 0644 ${S}/RT2870STACard.dat ${D}${sysconfdir}/Wireless/RT5572STA/RT5572STACard.dat
 }
-
