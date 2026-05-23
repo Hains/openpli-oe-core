@@ -1,0 +1,13 @@
+diff --git a/common/rtusb_io.c b/common/rtusb_io.c
+index 71ccb85..2a6fd9f 100644
+--- a/common/rtusb_io.c
++++ b/common/rtusb_io.c
+@@ -519,7 +519,7 @@ int write_reg(
+ 
+ 	if (ret) {
+ 		DBGPRINT(RT_DEBUG_ERROR, ("write reg fail\n"));
+-		return;
++		return -1;
+ 	}
+ }
+ 

@@ -16,6 +16,7 @@ SRC_URI = "file://mt7610u_wifi_sta_v3002_dpo_20130916.tar.bz2 \
 	file://0005-buildfix.patch;patch=1 \
 	file://0006-kernel-4_6.patch;patch=1 \
 	file://0007-kernel-4_11.patch;patch=1 \
+	file://0008-return-integer.patch;patch=1 \
 	"
 
 S = "${UNPACKDIR}/mt7610u_wifi_sta_v3002_dpo_20130916"
