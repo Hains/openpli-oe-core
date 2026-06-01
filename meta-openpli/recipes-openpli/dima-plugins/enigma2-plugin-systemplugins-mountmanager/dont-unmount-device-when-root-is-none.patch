@@ -1,0 +1,22 @@
+diff --git a/src/plugin.py b/src/plugin.py
+index 3418efd..48acb74 100644
+--- a/src/plugin.py
++++ b/src/plugin.py
+@@ -744,7 +744,7 @@ class DevicesMountPanel(Screen, ConfigListScreen):
+ 				if self.mountp.find('/media/hdd') < 0:
+ 					if self.mountp != _("None"):
+ 						system('umount ' + self.mountp)
+-					system('umount ' + self.device)
++						system('umount ' + self.device)
+ 					self.Console.ePopen("/sbin/blkid | grep " + self.device, self.add_fstab, [self.device, self.mountp])
+ 
+ 	def add_fstab(self, result=None, retval=None, extra_args=None):
+@@ -767,6 +767,8 @@ class DevicesMountPanel(Screen, ConfigListScreen):
+ 			elif self.device_tmp[3].startswith('UUID='):
+ 				self.device_uuid = self.device_tmp[3].replace('"', "")
+ 				self.device_uuid = self.device_uuid.replace('\n', "")
++			else:
++				self.device_uuid = ""
+ 			if not os.path.exists('/media/hdd'):
+ 				os.mkdir('/media/hdd', 0o755)
+ 			flashexpander = None
