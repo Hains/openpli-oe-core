@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://README;md5=0e36b30b1a9303e9763901f55c05e558"
 PLUGINNAME = "enigma2-plugin-mountmanager"
 PLUGIN_PATH = "SystemPlugins/MountManager"
 
-SRC_URI:append = " file://dont-unmount-device-when-root-is-none.patch"
+SRC_URI:append = " file://dont-unmount-root.patch"
 
 require dima-plugins.inc
 
