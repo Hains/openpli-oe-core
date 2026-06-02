@@ -1,10 +1,13 @@
 diff --git a/src/plugin.py b/src/plugin.py
-index 3418efd..48acb74 100644
+index 3418efd..424292e 100644
 --- a/src/plugin.py
 +++ b/src/plugin.py
-@@ -744,7 +744,7 @@ class DevicesMountPanel(Screen, ConfigListScreen):
+@@ -742,9 +742,9 @@ class DevicesMountPanel(Screen, ConfigListScreen):
+ 						pass
+ 				f.close()
  				if self.mountp.find('/media/hdd') < 0:
- 					if self.mountp != _("None"):
+-					if self.mountp != _("None"):
++					if self.mountp != _("None") and self.mountp != _("/"):
  						system('umount ' + self.mountp)
 -					system('umount ' + self.device)
 +						system('umount ' + self.device)
