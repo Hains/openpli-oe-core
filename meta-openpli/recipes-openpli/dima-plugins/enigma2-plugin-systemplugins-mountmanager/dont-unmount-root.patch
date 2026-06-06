@@ -11,7 +11,7 @@ index 3418efd..676d535 100644
  					parts = x.strip().split()
  					d1 = parts[1]
 -					mount_list.append(d1)
-+					if d1 != "/":
++					if d1 not in mount_list and d1 != "/":
 +						mount_list.append(d1)
  			self.buildMy_rec(device, mount_list)
  			list2.append(device)
