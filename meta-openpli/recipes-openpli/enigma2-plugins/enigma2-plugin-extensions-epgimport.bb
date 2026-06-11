@@ -18,7 +18,7 @@ S = "${UNPACKDIR}/${BPN}-${PV}/src"
 
 inherit setuptools3-openplugins
 
-RDEPENDS:${PN} = "python3-compression python3-shell python3-pkgutil"
+RDEPENDS:${PN} = "python3-compression python3-shell python3-pkgutil python3-treq"
 RRECOMMENDS:${PN} = "${PN}-sources"
 PACKAGES = "${PN}-dbg ${PN} ${PN}-src"
 
