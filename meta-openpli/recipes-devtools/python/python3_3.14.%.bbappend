@@ -1,5 +1,11 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
+
+PV = "3.14.6"
+
+SRC_URI[sha256sum] = "143b1dddefaec3bd2e21e3b839b34a2b7fb9842272883c576420d605e9f30c63"
+
 SRC_URI += "file://importlib.patch"
+SRC_URI:remove = "file://0001-Fix-ThreadingMock-call-count-race-condition.patch"
 
 inherit python3-dir
 
