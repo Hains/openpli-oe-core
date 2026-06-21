@@ -15,6 +15,9 @@ OPTIONAL_PACKAGES ?= ""
 OPTIONAL_BSP_PACKAGES ?= ""
 OPTIONAL_BSP_ENIGMA2_PACKAGES ?= ""
 
+# Depend on the image, so that it gets build
+DEPENDS = "openpli-enigma2-image"
+
 # Get the kernel version for this image, we need it to build conditionally on kernel version
 # NB: this only works in the feed, as the kernel needs to be build before the headers are available
 
