@@ -87,7 +87,7 @@ DESCRIPTION:append:enigma2-plugin-systemplugins-networkwizard = "provides easy s
 
 RDEPENDS:enigma2-plugin-extensions-cutlisteditor = "aio-grab"
 RDEPENDS:enigma2-plugin-systemplugins-nfiflash = "python3-twisted-web"
-RDEPENDS:enigma2-plugin-systemplugins-softwaremanager = "python3-twisted-web"
+RDEPENDS:enigma2-plugin-systemplugins-softwaremanager = "python3-treq"
 RDEPENDS:enigma2-plugin-systemplugins-wirelesslan = "wpa-supplicant wireless-tools python3-wifi"
 
 # Note that these tools lack recipes
