@@ -7,5 +7,5 @@ SRC_URI[sha256sum] = "c825ea737c59cea0e4a0c41da2388045ff5dd32d162220ac93a7a82ee4
 SRC_URI:append = " file://001-gstrtpmp4gpay-set-dafault-value-for-MPEG4-without-co.patch"
 
 PACKAGECONFIG = "${GSTREAMER_ORC} amrnb amrwb bz2 cairo flac gdk-pixbuf gudev jpeg lame libpng \
-                 mpg123 soup2 speex taglib v4l2 vpx wavpack \
+                 mpg123 soup3 speex taglib v4l2 vpx wavpack \
 "
