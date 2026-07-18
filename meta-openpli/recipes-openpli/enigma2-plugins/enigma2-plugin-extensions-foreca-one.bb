@@ -10,9 +10,8 @@ RDEPENDS:${PN} = "python3-pillow"
 
 inherit allarch gitpkgv python3-compileall
 
-PV = "1.0+git${SRCPV}"
-PKGV = "1.0+git${GITPKGV}"
-VER ="1.0"
+PV = "1.2.9+git${SRCPV}"
+PKGV = "1.2.9+git${GITPKGV}"
 
 SRC_URI = "git://github.com/Belfagor2005/ForecaOne.git;protocol=https;branch=main"
 
