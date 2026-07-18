@@ -203,6 +203,7 @@ OPTIONAL_ENIGMA2_PACKAGES = " \
 	enigma2-plugin-extensions-epgimport \
 	enigma2-plugin-extensions-estalker \
 	enigma2-plugin-extensions-fontinfo \
+	enigma2-plugin-extensions-foreca-one \
 	enigma2-plugin-extensions-freechannels \
 	enigma2-plugin-extensions-fritzcall \
 	enigma2-plugin-extensions-hdmitest \
