@@ -9,10 +9,11 @@ inherit gitpkgv python3-compileall
 PV = "1.0+git"
 PKGV = "1.0+git${GITPKGV}"
 
-SRC_ORIGIN ?= "git://github.com/OpenPLi/${BPN}.git;protocol=https;branch=master \
-               file://use-setuptools-instead-of-distutils.patch \
+SRC_ORIGIN ?= "git://github.com/OpenPLi/${BPN}.git;protocol=https;branch=master"
+
+SRC_URI := "${SRC_ORIGIN} \
+           file://use-setuptools-instead-of-distutils.patch \
 "
-SRC_URI := "${SRC_ORIGIN} "
 
 S = "${WORKDIR}/git/src"
 
