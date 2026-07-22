@@ -1,6 +1,6 @@
 DESCRIPTION = "PlutoTV plugin for enigma2"
 LICENSE = "GPL-2.0-only"
-LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=1ebbd3e34237af26da5dc08a4e440464"
+LIC_FILES_CHKSUM = "file://src/LICENSE;md5=c644709e9dad24bd9bf90ac96687ed2f"
 
 RREPLACES:${PN} = "enigma2-plugin-extensions-pluto"
 
