@@ -2,8 +2,10 @@ DESCRIPTION = "${MACHINE} libraries"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"
-PACKAGE_ARCH = "${MACHINE_ARCH}"
 PR = "${SRCDATE}"
+PACKAGE_ARCH = "${MACHINE_ARCH}"
+RDEPENDS:${PN} = "libbluray openssl10"
+
 VER ?= "${@bb.utils.contains('TARGET_ARCH', 'aarch64', '64' , '', d)}"
 
 SRC_URI = "http://downloads.openpli.org/archive/zgemma/zgemma-libs${VER}-${HICHIPSET}-${SRCDATE}.zip"
@@ -28,12 +30,6 @@ do_install() {
 }
 
 do_package_qa() {
-}
-
-pkg_preinst:${PN}() {
-#!/bin/sh
-	ln -sf ${libdir}/libcrypto.so.3 libcrypto.so.1.0.0
-	ln -sf ${libdir}/libssl.so.3 libssl.so.1.0.0
 }
 
 FILES:${PN} = "${libdir}/hisilicon/*"
