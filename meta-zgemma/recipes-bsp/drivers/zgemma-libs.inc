@@ -25,11 +25,15 @@ do_install() {
 	install -m 0755 ${S}/hisilicon/* ${D}${libdir}/hisilicon
 	install -m 0755 ${S}/ffmpeg/* ${D}${libdir}/hisilicon
 	ln -sf /lib/ld-linux-armhf.so.3 ${D}${libdir}/hisilicon/ld-linux.so
-	ln -sf libcrypto.so.1.0.0 ${D}${libdir}/libcrypto.so.3
-	ln -sf libssl.so.1.0.0 ${D}${libdir}/libssl.so.3
 }
 
 do_package_qa() {
+}
+
+pkg_preinst:${PN}() {
+#!/bin/sh
+	ln -sf ${libdir}/libcrypto.so.3 libcrypto.so.1.0.0
+	ln -sf ${libdir}/libssl.so.3 libssl.so.1.0.0
 }
 
 FILES:${PN} = "${libdir}/hisilicon/*"
