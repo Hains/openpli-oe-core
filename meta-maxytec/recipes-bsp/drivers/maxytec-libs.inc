@@ -27,6 +27,7 @@ do_install() {
 	install -m 0755 ${S}/hisilicon/* ${D}${libdir}/hisilicon
 	install -m 0755 ${S}/ffmpeg/* ${D}${libdir}/hisilicon
 	ln -sf /lib/ld-linux-armhf.so.3 ${D}${libdir}/hisilicon/ld-linux.so
+	rm -f ${D}${libdir}/hisilicon/libcrypto.so.* ${D}${libdir}/hisilicon/libssl.so.*
 }
 
 do_package_qa() {
