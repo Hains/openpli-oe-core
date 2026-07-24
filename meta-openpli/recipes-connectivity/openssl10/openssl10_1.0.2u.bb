@@ -341,8 +341,8 @@ do_install_ptest () {
 
 PACKAGES =+ "libcrypto10 libssl10 openssl10-conf ${PN}-engines ${PN}-misc"
 
-FILES:libcrypto10 = "${libdir}/libcrypto${SOLIBS}"
-FILES:libssl10 = "${libdir}/libssl${SOLIBS}"
+FILES:libcrypto1.0.2 = "${libdir}/libcrypto${SOLIBS}"
+FILES:libssl1.0.2 = "${libdir}/libssl${SOLIBS}"
 FILES:openssl10-conf = "${sysconfdir}/ssl/openssl.cnf"
 FILES:${PN}-engines = "${libdir}/ssl/engines/*.so ${libdir}/engines"
 FILES:${PN}-misc = "${libdir}/ssl/misc"
