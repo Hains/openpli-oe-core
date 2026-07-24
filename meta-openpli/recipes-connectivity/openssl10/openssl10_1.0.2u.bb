@@ -271,6 +271,10 @@ do_install () {
 	    rm -f $f
 	    ln -s openssl10-$ln_f $(dirname $f)/openssl10-$(basename $f)
 	done
+
+	# Symlinks to lib*-1.0.0 for hisilicon libs
+	ln -sf libcrypto.so.1.0.2 ${D}${libdir}/libcrypto.so.1.0.0
+    ln -sf libssl.so.1.0.2 ${D}${libdir}/libssl.so.1.0.0
 }
 
 do_install:append:class-native () {
