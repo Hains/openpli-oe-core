@@ -4,7 +4,7 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 PR = "${SRCDATE}"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-RDEPENDS:${PN} = "libbluray openssl10"
+RDEPENDS:${PN} = "libbluray libcrypto-compat"
 
 VER ?= "${@bb.utils.contains('TARGET_ARCH', 'aarch64', '64' , '', d)}"
 
