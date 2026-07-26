@@ -14,7 +14,6 @@ PV = "1.1.2"
 PKGV = "1.1.2+git${GITPKGV}"
 SRCREV = "${AUTOREV}"
 SRC_URI = "git://github.com/OpenCockpit/SamsungTV.git;protocol=https;branch=master"
-S = "${WORKDIR}/git"
 
 pluginname = "SamsungTV"
 pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/${pluginname}"
