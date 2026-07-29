@@ -4,7 +4,7 @@ PV = "1.5+git"
 PKGV = "1.5+git${GITPKGV}"
 
 SRC_URI = "git://github.com/LibreELEC/dvb-firmware.git;protocol=https;branch=master"
-S = "${WORKDIR}/git/firmware"
+S = "${UNPACKDIR}/${PN}/firmware"
 
 require linux-firmware-local.inc
 
