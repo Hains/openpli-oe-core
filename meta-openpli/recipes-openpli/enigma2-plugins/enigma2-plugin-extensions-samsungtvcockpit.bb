@@ -16,7 +16,7 @@ SRCREV = "${AUTOREV}"
 SRC_URI = "git://github.com/OpenCockpit/SamsungTV.git;protocol=https;branch=master"
 S = "${WORKDIR}/git"
 
-pluginname = "SamsungTV"
+pluginname = "SamsungTVCockpit"
 pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/${pluginname}"
 
 do_install:append() {
