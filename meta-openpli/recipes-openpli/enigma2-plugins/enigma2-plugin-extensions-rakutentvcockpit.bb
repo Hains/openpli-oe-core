@@ -33,7 +33,7 @@ do_install:append() {
 	fi
 }
 
-pluginname = "RakutenTV"
+pluginname = "RakutenTVCockpit"
 pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/${pluginname}"
 
 FILES:${PN} = "/usr/*"
