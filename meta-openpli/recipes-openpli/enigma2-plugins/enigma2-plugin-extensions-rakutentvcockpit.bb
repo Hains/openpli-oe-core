@@ -13,7 +13,7 @@ DEPENDS = "gettext-native"
 PV = "0.2.2"
 PKGV = "0.2.2+git${GITPKGV}"
 SRCREV = "${AUTOREV}"
-SRC_URI = "git://github.com/OpenCockpit/RakutenTV.git;protocol=https;branch=master"
+SRC_URI = "git://github.com/OpenCockpit/RakutenTVCockpit.git;protocol=https;branch=master"
 
 do_install:append() {
 	install -d ${D}${pluginpath}
@@ -32,7 +32,7 @@ do_install:append() {
 	fi
 }
 
-pluginname = "RakutenTV"
+pluginname = "RakutenTVCockpit"
 pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/${pluginname}"
 
 FILES:${PN} = "/usr/*"
