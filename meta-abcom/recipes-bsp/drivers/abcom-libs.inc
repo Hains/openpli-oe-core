@@ -4,6 +4,8 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 PR = "${SRCDATE}"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
+RDEPENDS:${PN} = "libbluray libcrypto-compat"
+
 VER ?= "${@bb.utils.contains('TARGET_ARCH', 'aarch64', '64' , '', d)}"
 
 SRC_URI = "http://downloads.openpli.org/archive/abcom/${MACHINE}-libs${VER}-${SRCDATE}.zip"
@@ -25,6 +27,7 @@ do_install() {
 	install -m 0755 ${S}/hisilicon/* ${D}${libdir}/hisilicon
 	install -m 0755 ${S}/ffmpeg/* ${D}${libdir}/hisilicon
 	ln -sf /lib/ld-linux-armhf.so.3 ${D}${libdir}/hisilicon/ld-linux.so
+	rm -f ${D}${libdir}/hisilicon/libcrypto.so.* ${D}${libdir}/hisilicon/libssl.so.*
 }
 
 do_package_qa() {
