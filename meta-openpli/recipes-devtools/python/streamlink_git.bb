@@ -42,7 +42,7 @@ SRC_URI = " \
 S = "${WORKDIR}/git"
 
 do_unpack:append() {
-	bb.build.exec_func('do_prepare_plugins_dir', d)
+    bb.build.exec_func('do_prepare_plugins_dir', d)
 }
 
 do_compile:prepend() {
