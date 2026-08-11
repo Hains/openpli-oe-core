@@ -3,9 +3,9 @@ SRC_URI += "file://importlib.patch"
 
 inherit python3-dir
 
-PV = "3.13.14"
+PV = "3.13.15"
 
-SRC_URI[sha256sum] = "639e43243c620a308f968213df9e00f2f8f62332f7adbaa7a7eeb9783057c690"
+SRC_URI[sha256sum] = "1e66a7945a48390ee4c2a4268a0e4185884059a13c4aab6d148aa208deea4a76"
 
 FILES:${PN}-src += " \
     ${libdir}/${PYTHON_DIR}/*.py \
