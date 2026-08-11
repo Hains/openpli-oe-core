@@ -10,10 +10,12 @@ inherit gitpkgv allarch gettext python3-compileall
 
 DEPENDS = "gettext-native"
 
-PV = "1.1.2"
-PKGV = "1.1.2+git${GITPKGV}"
+PV = "1.11.4"
+PKGV = "1.11.4+git${GITPKGV}"
 
-SRC_URI = "git://github.com/OpenCockpit/SamsungTVCockpit.git;protocol=https;branch=master"
+SRC_URI = "git://github.com/OpenCockpit/SamsungTVCockpit.git;protocol=https;branch=master \
+           file://fix-missing-filereadlines-method-openpli.patch \
+           "
 
 pluginname = "SamsungTVCockpit"
 pluginpath = "/usr/lib/enigma2/python/Plugins/Extensions/${pluginname}"
