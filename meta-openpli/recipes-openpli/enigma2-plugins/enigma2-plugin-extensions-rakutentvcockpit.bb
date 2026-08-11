@@ -12,7 +12,7 @@ DEPENDS = "gettext-native"
 
 PV = "0.2.2"
 PKGV = "0.2.2+git${GITPKGV}"
-SRCREV = "${AUTOREV}"
+
 SRC_URI = "git://github.com/OpenCockpit/RakutenTVCockpit.git;protocol=https;branch=master"
 S = "${WORKDIR}/git"
 
