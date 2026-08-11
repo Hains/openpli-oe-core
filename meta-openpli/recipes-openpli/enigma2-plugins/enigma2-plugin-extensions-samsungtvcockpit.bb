@@ -12,7 +12,7 @@ DEPENDS = "gettext-native"
 
 PV = "1.1.2"
 PKGV = "1.1.2+git${GITPKGV}"
-SRCREV = "${AUTOREV}"
+
 SRC_URI = "git://github.com/OpenCockpit/SamsungTVCockpit.git;protocol=https;branch=master"
 
 pluginname = "SamsungTVCockpit"
