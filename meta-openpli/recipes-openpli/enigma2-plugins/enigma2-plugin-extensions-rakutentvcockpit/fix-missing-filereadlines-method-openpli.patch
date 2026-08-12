@@ -1,5 +1,5 @@
 diff --git a/src/PluginUpgrade.py b/src/PluginUpgrade.py
-index f3ac94e..16e0357 100755
+index f3ac94e..5fe2bb7 100755
 --- a/src/PluginUpgrade.py
 +++ b/src/PluginUpgrade.py
 @@ -9,7 +9,6 @@ import subprocess
@@ -10,30 +10,42 @@ index f3ac94e..16e0357 100755
  from twisted.internet import threads
  
  from .Version import PLUGIN
-@@ -42,7 +41,7 @@ def _isVersionNewer(candidate_version, current_version):
+@@ -42,7 +41,11 @@ def _isVersionNewer(candidate_version, current_version):
  
  
  def _opkgListsDir():
 -    for line in fileReadLines("/etc/opkg/opkg.conf") or []:
-+    for line in open("/etc/opkg/opkg.conf").readlines() or []:
++    try:
++        readFile = open("/etc/opkg/opkg.conf").readlines()
++    except:
++        readFile = []
++    for line in readFile:
          parts = line.split()
          if len(parts) >= 2 and parts[-2] == "lists_dir":
              return parts[-1]
-@@ -54,7 +53,7 @@ def getInstalledPackageVersion(package_name):
+@@ -54,7 +57,11 @@ def getInstalledPackageVersion(package_name):
      if not os.path.exists(control_file):
          return None
  
 -    for line in fileReadLines(control_file) or []:
-+    for line in open(control_file).readlines() or []:
++    try:
++        readFile = open(control_file).readlines()
++    except:
++        readFile = []
++    for line in readFile:
          if line.startswith("Version:"):
              return line.split("Version:", 1)[1].strip().split("+", 1)[0]
  
-@@ -100,7 +99,7 @@ def getAvailablePackageVersion(package_name):
+@@ -100,7 +107,11 @@ def getAvailablePackageVersion(package_name):
      latest_version = None
      in_package = False
  
 -    for line in fileReadLines(os.path.join(_opkgListsDir(), COCKPIT_FEED_NAME)) or []:
-+    for line in open(os.path.join(_opkgListsDir(), COCKPIT_FEED_NAME)).readlines() or []:
++    try:
++        readFile = open(os.path.join(_opkgListsDir(), COCKPIT_FEED_NAME)).readlines()
++    except:
++        readFile = []
++    for line in readFile:
          if line.startswith("Package:"):
              in_package = line.split(":", 1)[1].strip() == package_name
          elif in_package and line.startswith("Version:"):
