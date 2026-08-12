@@ -10,10 +10,12 @@ inherit gitpkgv allarch gettext python3-compileall
 
 DEPENDS = "gettext-native"
 
-PV = "0.2.2"
-PKGV = "0.2.2+git${GITPKGV}"
+PV = "0.11.5"
+PKGV = "0.11.5+git${GITPKGV}"
 
-SRC_URI = "git://github.com/OpenCockpit/RakutenTVCockpit.git;protocol=https;branch=master"
+SRC_URI = "git://github.com/OpenCockpit/RakutenTVCockpit.git;protocol=https;branch=master \
+           file://fix-missing-filereadlines-method-openpli.patch \
+           "
 
 do_install:append() {
 	install -d ${D}${pluginpath}
