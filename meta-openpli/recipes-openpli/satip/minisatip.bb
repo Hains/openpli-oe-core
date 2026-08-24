@@ -8,7 +8,6 @@ RDEPENDS:${PN} = "libdvbcsa openssl"
 
 SRC_URI = " \
     git://github.com/catalinii/minisatip.git;protocol=https;branch=master; \
-    file://drop-stacktrace.patch \
     file://minisatip.sh \
     "
 
