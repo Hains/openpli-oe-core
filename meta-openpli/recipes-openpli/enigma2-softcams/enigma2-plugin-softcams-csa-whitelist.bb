@@ -1,4 +1,4 @@
-DESCRIPTION = "OsCam iCam whitelist"
+DESCRIPTION = "NDS CSA whitelist, list of service references using NDS CSA scrambling"
 MAINTAINER = "AbuBaniaz"
 LICENSE = "CLOSED"
 
@@ -8,7 +8,8 @@ PKGV = "2.0+git${GITPKGV}"
 SRC_ORIGIN ?= "git://github.com/E2OpenPlugins/oscam-whitelist.git;protocol=https;branch=main"
 SRC_URI := "${SRC_ORIGIN} "
 
-DEPENDS = "enigma2-plugin-softcams-oscam"
+RCONFLICTS:${PN} = "enigma2-plugins-softcams-oscam-whitelist"
+RREPLACES:${PN} = "enigma2-plugins-softcams-oscam-whitelist"
 
 inherit allarch gitpkgv
 
