@@ -11,7 +11,7 @@ S = "${UNPACKDIR}/${BP}"
 
 DEPENDS += "python3-incremental-native"
 
-RDEPENDS:${PN} += "python3-attrs python3-hyperlink python3-incremental python3-requests python3-twisted"
+RDEPENDS:${PN} += "python3-attrs python3-hyperlink python3-incremental python3-requests python3-twisted python3-python-multipart"
 
 RDEPENDS:${PN}-dbg = "${PN}"
 FILES:${PN}-dbg = " \
@@ -21,10 +21,11 @@ FILES:${PN}-dbg = " \
 
 PYPI_PACKAGE = "treq"
 
-SRC_URI[md5sum] = "b0a3c2e315375388e820019afc59919d"
-SRC_URI[sha256sum] = "25dde3a55ae85ec2f2c56332c99aef255ab14f997d0d00552ebff13538a9804a"
+SRC_URI[sha256sum] = "43e728e12aca2d897c626cf07dc7b4392749b73de050a7d66e086cb3a6e15da9"
 
 inherit pypi python_hatchling
+
+SRC_URI:append = " file://fix-broken-module-import.patch"
 
 include python3-package-split.inc
 
