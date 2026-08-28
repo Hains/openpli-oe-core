@@ -7,8 +7,8 @@ DEPENDS = "python3-babel-native"
 
 RDEPENDS:${PN} = "python3-pyyaml python3-markdown python3-click"
 
-SRC_URI[md5sum] = "e5a9a46eed68c471e40ed0dea389e5c0"
-SRC_URI[sha256sum] = "b768f32d99e45ed5f4c3eef1f67903e803c97f97ba61a531a5d0a45d40df90a8"
+SRC_URI[md5sum] = "2b51e5c913f2ad9a72b454649ab8ddbb"
+SRC_URI[sha256sum] = "9a56964bf3ca004b3e0db98ab8a8d87fad051d8edb377bc166dc4be826666c81"
 
 inherit pypi python_setuptools_build_meta
 
