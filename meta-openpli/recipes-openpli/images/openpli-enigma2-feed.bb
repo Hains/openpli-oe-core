@@ -123,6 +123,7 @@ OPTIONAL_PACKAGES += " \
 	parted \
 	procps \
 	pyload \
+	python3-circuits \
 	python3-daap \
 	python3-ipaddress \
 	python3-ntplib \
