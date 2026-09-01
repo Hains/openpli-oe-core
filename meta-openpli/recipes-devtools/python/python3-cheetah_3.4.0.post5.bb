@@ -3,15 +3,13 @@ HOMEPAGE = "https://cheetahtemplate.org/"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=6c8d05debf9d3d283931051ce5232fe7"
 
-PYPI_PACKAGE = "Cheetah3"
-inherit setuptools3
+RDEPENDS:${PN} = "python3-pprint"
 
-SRC_URI = "git://github.com/CheetahTemplate3/cheetah3;protocol=https;branch=master"
+PYPI_PACKAGE = "ct3"
 
-SRCREV = "813b30ebe39e4d56c14ee550df2109743e246de7"
+inherit pypi setuptools3
 
-RDEPENDS:${PN} = "python3-pickle python3-pprint"
-RDEPENDS:${PN}:class-native = ""
+SRC_URI[sha256sum] = "1c5f2000d52d591703c74f6f5f7ef427ed1b6501be28e3f1634f62c3a5d792e1"
 
 BBCLASSEXTEND = "native nativesdk"
 
