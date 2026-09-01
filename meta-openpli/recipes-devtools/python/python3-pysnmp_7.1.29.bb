@@ -6,8 +6,6 @@ LIC_FILES_CHKSUM = "file://LICENSE.rst;md5=57ee828406c11080ad9bd7eabdc5ae1b"
 
 RDEPENDS:${PN} = "python3-core"
 
-S = "${UNPACKDIR}/pysnmp-${PV}"
-
 inherit pypi python_hatchling
 
 SRC_URI[md5sum] = "208c6578ce0bf2e6cbb5563f4972b8aa"
