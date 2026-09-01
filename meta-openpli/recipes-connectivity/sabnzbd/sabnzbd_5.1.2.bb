@@ -13,7 +13,7 @@ RDEPENDS:${PN} = "\
 	python3-notify2 python3-puremagic python3-guessit python3-sgmllib3k python3-more-itertools python3-modules \
 	python3-sabctools python3-rebulk python3-dateutil python3-babelfish python3-pysocks python3-pip python3-jaraco.context p7zip \
 	python3-jaraco.functools python3-jaraco.collections python3-jaraco.text python3-jaraco.classes python3-apprise \
-	python3-pytz python3-tempora python3-zc.lockfile python3-six python3-pycparser python3-cffi python3-ct3 \
+	python3-pytz python3-tempora python3-zc.lockfile python3-six python3-pycparser python3-cffi \
 	"
 
 RRECOMMENDS:${PN} = "par2cmdline unrar"
