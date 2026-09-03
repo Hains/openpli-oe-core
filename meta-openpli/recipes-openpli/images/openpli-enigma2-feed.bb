@@ -136,6 +136,7 @@ OPTIONAL_PACKAGES += " \
 	python3-beautifulsoup4 \
 	python3-compat2 \
 	python3-future \
+	python3-py3amf \
 	python3-pycryptodome \
 	python3-singledispatch \
 	python3-websocket-client \
