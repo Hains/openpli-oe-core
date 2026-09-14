@@ -15,8 +15,6 @@ PKGV = "1.2.9+git${GITPKGV}"
 
 SRC_URI = "git://github.com/Belfagor2005/ForecaOne.git;protocol=https;branch=main"
 
-S = "${WORKDIR}/git"
-
 FILES:${PN} = "/usr/*"
 FILES:${PN}-src = "${libdir}/enigma2/python/Plugins/Extensions/Foreca1/*.py"
 
