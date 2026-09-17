@@ -102,7 +102,7 @@ do_install() {
 
 #	Kernel version
 
-	KERNEL_VERSION="${@get_kernelversion_headers('${STAGING_KERNEL_DIR}') or oe.utils.read_file('${PKGDATA_DIR}/kernel-depmod/kernel-abiversion')}"
+	KERNEL_VERSION="${@oe.kernel.get_version_headers('${STAGING_KERNEL_DIR}') or oe.utils.read_file('${PKGDATA_DIR}/kernel-depmod/kernel-abiversion')}"
 
 #	OE version info
 
