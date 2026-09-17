@@ -1,6 +1,6 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-SRC_URI += "file://0001-makefile-add-demux-header.patch \
+SRC_URI += "file://0001-ffmpeg_ac4.patch \
             file://0002-fix-mpegts.patch \
             file://0003-allow-to-choose-rtmp-impl-at-runtime.patch \
             file://0004-hls-replace-key-uri.patch \
@@ -12,7 +12,6 @@ SRC_URI += "file://0001-makefile-add-demux-header.patch \
             file://0011-rtsp.patch \
             file://0012-dxva2.patch \
             file://0013-add-av_stream_get_first_dts-for-chromium.patch \
-            file://ffmpeg_ac4.patch \
             "
 
 EXTRA_FFCONF = " \

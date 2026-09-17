@@ -1,6 +1,8 @@
+diff --git a/libavformat/mpegts.c b/libavformat/mpegts.c
+index cde8f46..c3cc508 100644
 --- a/libavformat/mpegts.c
 +++ b/libavformat/mpegts.c
-@@ -1037,10 +1037,12 @@ static int new_pes_packet(PESContext *pes, AVPacket *pkt)
+@@ -1116,10 +1116,12 @@ static int new_pes_packet(PESContext *pes, AVPacket *pkt)
      pes->buffer = NULL;
      reset_pes_packet_state(pes);
  
@@ -11,5 +13,5 @@
      *sd = pes->stream_id;
 +    */
  
-     return 0;
- }
+     if (pes->st->codecpar->codec_id == AV_CODEC_ID_TIMED_ID3) {
+         int ret = timed_id3_update_metadata(pes->st, pkt);
