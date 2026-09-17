@@ -2,6 +2,8 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
+CFLAGS:append:class-target = " -lm"
+
 SRC_URI:append:ustym4ks2ottx = " \
 	file://libjpeg.so.8.2.2 \
 "
