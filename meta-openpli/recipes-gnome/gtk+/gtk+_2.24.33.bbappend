@@ -1,8 +1,7 @@
 PR:append = ".2"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-THISDIR := "${@os.path.dirname(d.getVar('FILE', True))}"
-FILESPATH =. "${@base_set_filespath(["${THISDIR}/${BPN}"], d)}:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 SRC_URI += " \
 	file://001_gdk_window_ensure_native_patch.diff;apply=yes;striplevel=1 \
