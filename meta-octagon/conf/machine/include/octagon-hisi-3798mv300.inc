@@ -15,7 +15,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = "\
     octagon-partitions-${MACHINE} \
     octagon-buildimage \
     e2fsprogs-resize2fs \
-    gptfdisk \
 "
 
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\

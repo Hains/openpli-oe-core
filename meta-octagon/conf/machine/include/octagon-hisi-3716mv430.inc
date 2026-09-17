@@ -14,7 +14,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS = "\
     ${@bb.utils.contains("MACHINE_FEATURES", "blindscan-dvbs", "octagon-blindscan-${SOC_FAMILY}" , "", d)} \
     octagon-partitions-${MACHINE} \
     octagon-buildimage \
-    gptfdisk \
 "
 
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\

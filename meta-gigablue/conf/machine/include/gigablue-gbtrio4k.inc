@@ -21,7 +21,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     gigablue-partitions-${MACHINE} \
     gigablue-buildimage \
     e2fsprogs-resize2fs \
-    gptfdisk \
 "
 
 MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS = "\
