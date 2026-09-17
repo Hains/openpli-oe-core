@@ -1,7 +1,7 @@
 SUMMARY = "Platform Util drivers for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE}"
 
 PV = "${KV}+${SRCDATE}"

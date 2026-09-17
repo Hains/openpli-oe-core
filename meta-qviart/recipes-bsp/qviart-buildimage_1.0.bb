@@ -1,5 +1,5 @@
 SUMMARY = "Creat the usb ugrade file"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 SRC_URI = "file://buildimage.zip"
 

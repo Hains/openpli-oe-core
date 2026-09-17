@@ -1,7 +1,7 @@
 SUMMARY = "Gigablue Drivers for AIC8800 for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE}"
 
 SRCDATE = "20241011"

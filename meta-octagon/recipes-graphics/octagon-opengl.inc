@@ -1,7 +1,7 @@
 SUMMARY = "libgles for ${SOC_FAMILY}"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PR = "${SRCDATE}"

@@ -1,6 +1,6 @@
 SUMMARY = "hciattach sprd for Gigablue Model ${MACHINE}"
 MAINTAINER = "gigablue"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit update-rc.d

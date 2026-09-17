@@ -1,5 +1,5 @@
 SUMMARY = "Firmware for mn8847x"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 inherit allarch
 

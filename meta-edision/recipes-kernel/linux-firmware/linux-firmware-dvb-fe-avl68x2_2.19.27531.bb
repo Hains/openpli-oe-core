@@ -1,6 +1,6 @@
 SUMMARY = "Availink demodulator firmware"
 HOMEPAGE = "http://www.availink.com/"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 SRC_URI = "git://github.com/edision-open/linux-firmware.git;protocol=https;branch=master"
 

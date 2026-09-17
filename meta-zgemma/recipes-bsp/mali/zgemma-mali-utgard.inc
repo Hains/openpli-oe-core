@@ -1,7 +1,7 @@
 DESCRIPTION = "Mali OpenGL"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 PR = "${SRCDATE}"
 DEPENDS = "libdrm mesa patchelf-native"

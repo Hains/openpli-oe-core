@@ -1,6 +1,6 @@
 DESCRIPTION = "Opera HbbTV browser"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 SECTION = "base"
 
 DEPENDS = "mpfr gmp"

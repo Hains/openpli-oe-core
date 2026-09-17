@@ -1,7 +1,7 @@
 SUMMARY = "showiframe for Gigablue Model ${MACHINE}"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(gbtrio4k)$"

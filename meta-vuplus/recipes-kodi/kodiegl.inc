@@ -1,5 +1,5 @@
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-Proprietary"
 require conf/license/license-close.inc
 
 PR = "${PKGDATE}"

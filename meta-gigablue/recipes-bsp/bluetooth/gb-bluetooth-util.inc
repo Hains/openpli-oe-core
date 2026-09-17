@@ -1,5 +1,5 @@
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 # require conf/license/license-close.inc
 
 PROVIDES += "gb-bluetooth-util"

@@ -1,6 +1,6 @@
 SUMMARY = "CDM pepper plugin Widevine"
 DESCRIPTION = "Install widevine components for Qt"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 DEPENDS = "qtwebengine"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 

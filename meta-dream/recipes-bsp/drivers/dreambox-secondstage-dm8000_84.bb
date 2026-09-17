@@ -1,6 +1,6 @@
 SUMMARY = "Dreambox second stage bootloader"
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PROVIDES += "virtual/bootloader"
 PRIORITY = "required"
 PACKAGE_ARCH = "${MACHINE_ARCH}"

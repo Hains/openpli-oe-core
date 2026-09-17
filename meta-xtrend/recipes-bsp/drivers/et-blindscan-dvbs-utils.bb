@@ -1,8 +1,7 @@
 DESCRIPTION = "Utils for DVB-S blindscan"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
-
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 SRC_URI = "http://downloads.openpli.org/archive/xtrend/et-dvbs-blindscan-1.1.zip"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"

@@ -1,6 +1,6 @@
 SUMMARY = "Qualcomm QCA6174 firmware"
 HOMEPAGE = "https://www.qualcomm.com/"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 COMPATIBLE_MACHINE = "osmio4k|osmio4kplus"
 

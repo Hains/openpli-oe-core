@@ -1,5 +1,5 @@
 SUMMARY = "Firmware files for uwe5621"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 inherit allarch
 

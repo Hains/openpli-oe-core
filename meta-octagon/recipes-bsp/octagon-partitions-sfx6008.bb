@@ -1,7 +1,7 @@
 SUMMARY = "SFX6008 partitions files"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit deploy

@@ -1,5 +1,5 @@
 DESCRIPTION = "opera browser util"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 SRCREV = "${AUTOREV}"
 PR = "r1"

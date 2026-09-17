@@ -2,7 +2,7 @@ DESCRIPTION = "first bootlogo splash image"
 SECTION = "base"
 PRIORITY = "required"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 COMPATIBLE_MACHINE = "lunix|lunixco|lunix4k|lunix3_4k"
 

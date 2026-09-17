@@ -1,7 +1,7 @@
 DESCRIPTION = "shared lib for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 

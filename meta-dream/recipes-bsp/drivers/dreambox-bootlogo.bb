@@ -1,5 +1,5 @@
 SUMMARY = "Dreambox bootlogo"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PV = "1.3"
 
 BINARY_VERSION = "1.3"

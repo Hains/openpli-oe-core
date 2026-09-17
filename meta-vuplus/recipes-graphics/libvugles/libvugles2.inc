@@ -1,6 +1,6 @@
 SUMMARY = "shared library for E2 animation"
 SECTION = "libs"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 DEPENDS:vuduo2 = "libgles-${MACHINE}"

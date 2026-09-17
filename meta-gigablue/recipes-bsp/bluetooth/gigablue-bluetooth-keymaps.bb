@@ -1,6 +1,6 @@
 SUMMARY = "Gigablue Blootooth RCU keymaps"
 MAINTAINER = "gigablue"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 

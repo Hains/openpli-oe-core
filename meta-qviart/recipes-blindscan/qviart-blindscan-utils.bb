@@ -5,7 +5,7 @@ RDEPENDS:${PN} = "ncurses"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PACKAGES = "qviart-blindscan-dvbs-utils"
 

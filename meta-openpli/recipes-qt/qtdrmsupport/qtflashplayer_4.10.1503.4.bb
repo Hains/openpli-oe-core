@@ -1,6 +1,6 @@
 SUMMARY = "Flash pepper plugin Adobe"
 DESCRIPTION = "Install flash components for Qt"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 DEPENDS = "qtwebengine"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 

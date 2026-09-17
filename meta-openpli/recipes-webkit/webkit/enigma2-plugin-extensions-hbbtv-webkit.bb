@@ -1,7 +1,7 @@
 DESCRIPTION = "E2 Webkit HbbTV Plugin"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 #require conf/license/license-close.inc
 
 COMPATIBLE_MACHINE = "^(lunix|lunix3-|galaxy|revo)4k$"

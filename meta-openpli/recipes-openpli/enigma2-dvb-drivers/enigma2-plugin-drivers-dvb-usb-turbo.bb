@@ -1,6 +1,6 @@
 SUMMARY = "USB DVB driver for Vuplus Tuner Turbo"
 
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 

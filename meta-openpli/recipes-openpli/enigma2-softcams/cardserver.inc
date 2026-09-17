@@ -1,4 +1,4 @@
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 FILES:${PN} = "${bindir} ${sysconfdir}"
 

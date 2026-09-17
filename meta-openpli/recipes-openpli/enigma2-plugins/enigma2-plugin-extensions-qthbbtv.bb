@@ -1,7 +1,7 @@
 SUMMARY = "HbbTV for QT browser"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 inherit gitpkgv autotools pkgconfig
 

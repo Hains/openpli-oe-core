@@ -1,7 +1,7 @@
 SUMMARY = "grab for dags Model ${MACHINE}"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "^(lunix4k|lunix3-4k)$"

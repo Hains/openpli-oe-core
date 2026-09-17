@@ -1,6 +1,6 @@
 DESCRIPTION = "Infobar Weather plugin"
 MAINTAINER = "scriptmelvin"
-LICENSE = "Proprietary"
+LICENSE = "LicenseRef-Proprietary"
 LIC_FILES_CHKSUM = "file://${OPENPLI_BASE}/LICENSE;md5=eb723b61539feef013de476e68b5c50a"
 
 inherit gitpkgv setuptools3-openplugins gettext python3-compileall

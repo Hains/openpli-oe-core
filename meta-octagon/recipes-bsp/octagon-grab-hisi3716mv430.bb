@@ -1,7 +1,7 @@
 SUMMARY = "grab for Octagon Chipset ${SOC_FAMILY}"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "sfx6008"

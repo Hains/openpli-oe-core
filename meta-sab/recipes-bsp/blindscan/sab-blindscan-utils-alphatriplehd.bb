@@ -5,7 +5,7 @@ PRIORITY = "optional"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 RDEPENDS:${PN} += "libxml2"
 
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PROVIDES += "virtual/blindscan-dvbc"
 RPROVIDES:${PN} += "virtual-blindscan-dvbc"

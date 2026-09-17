@@ -1,7 +1,7 @@
 DESCRIPTION = "Chromium and YoutubeTV"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 COMPATIBLE_MACHINE = "^(vu*4k*)$"
 

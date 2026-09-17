@@ -1,5 +1,5 @@
 SUMMARY = "Firmware files for AIC8800"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 require conf/license/license-close.inc
 
 inherit allarch

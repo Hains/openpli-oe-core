@@ -1,6 +1,6 @@
 SUMMARY = "vuplus-hdmi-in-helper"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 LIC_FILES_CHKSUM = "file://update_systemconfig_arm;md5=39018f970452e01743a00a4ff642c099"
 
 PV = "1.0"

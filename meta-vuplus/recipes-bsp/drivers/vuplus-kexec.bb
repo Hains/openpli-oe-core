@@ -1,6 +1,6 @@
 SUMMARY = "vuplus-kexec"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PV = "1.0"
 

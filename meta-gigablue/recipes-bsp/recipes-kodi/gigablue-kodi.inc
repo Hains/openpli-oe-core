@@ -1,6 +1,6 @@
 DESCRIPTION = "Gigablue xbmc support"
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 

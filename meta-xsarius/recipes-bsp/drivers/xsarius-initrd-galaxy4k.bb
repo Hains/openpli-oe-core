@@ -1,5 +1,5 @@
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PRIORITY = "required"
 
 PR = "r7"

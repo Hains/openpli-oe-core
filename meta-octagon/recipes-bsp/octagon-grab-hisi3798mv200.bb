@@ -1,7 +1,7 @@
 SUMMARY = "grab for Octagon Model ${SOC_FAMILY}"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "sf8008|sf8008m"

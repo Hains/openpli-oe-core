@@ -1,7 +1,7 @@
 DESCRIPTION = "E2 Chromium Plugin"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 # require conf/license/license-close.inc
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"

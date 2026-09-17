@@ -1,7 +1,7 @@
 SSUMMARY = "Hardware drivers for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 KV = "4.0.1"
 SRCDATE = "20170829"

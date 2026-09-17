@@ -1,7 +1,7 @@
 DESCRIPTION = "Chromium and YoutubeTV"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PV = "1.2"
 PR = "${SRCDATE}"

@@ -1,6 +1,6 @@
 SUMMARY = "Hardware drivers for Dreambox"
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 DEPENDS += "virtual/kernel"
 PRIORITY = "required"
 PR = "r7.0"

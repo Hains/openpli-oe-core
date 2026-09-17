@@ -4,7 +4,7 @@ PRIORITY = "optional"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PROVIDES += "virtual/blindscan-dvbc"
 RPROVIDES:${PN} += "virtual-blindscan-dvbc"

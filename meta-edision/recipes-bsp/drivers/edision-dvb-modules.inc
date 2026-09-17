@@ -1,7 +1,7 @@
 DESCRIPTION = "Hardware drivers for Edision ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PV = "${KV}+${SRCDATE}"
 PR = "r0"

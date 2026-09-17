@@ -1,7 +1,7 @@
 SUMMARY = "Utilities for transponder & dvb-s/c blindscan"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 

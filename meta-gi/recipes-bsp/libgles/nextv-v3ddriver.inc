@@ -1,7 +1,7 @@
 DESCRIPTION = "V3DDRIVER for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 PV = "${SRCDATE}"
 DEPENDS = "mesa patchelf-native"

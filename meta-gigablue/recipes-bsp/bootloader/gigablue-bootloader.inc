@@ -2,7 +2,7 @@ SUMMARY = "Gigablue BOLT 2nd bootloader update"
 SECTION = "base"
 PRIORITY = "required"
 MAINTAINER = "Gigablue"
-LICENSE = "proprietary"
+LICENSE = "LicenseRef-proprietary"
 PACKAGE_ARCH = "${MACHINE}"
 
 require conf/license/license-gplv2.inc

@@ -1,7 +1,7 @@
 DESCRIPTION = "Utils for blindscan"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PACKAGES = "qviart-blindscan-utils-${CHIP} ${PN}-dbg"
 

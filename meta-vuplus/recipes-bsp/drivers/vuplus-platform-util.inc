@@ -1,5 +1,5 @@
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PV = "15.1"
 PR = "${SRCDATE}.${SRCDATE_PR}"

@@ -1,7 +1,7 @@
 SUMMARY = "Utilities for transponder dvb-c and dvb-s blindscan"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PACKAGES = "miraclebox-blindscan-dvbs-utils-${MACHINE} miraclebox-blindscan-dvbc-utils-${MACHINE} miraclebox-blindscan-dvbs-utils-${MACHINE}-dbg miraclebox-blindscan-dvbc-utils-${MACHINE}-dbg"
 

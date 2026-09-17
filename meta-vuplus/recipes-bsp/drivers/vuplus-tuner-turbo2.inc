@@ -1,6 +1,6 @@
 SUMMARY = "Hardware drivers and blindscan util for Vuplus Tuner Turbo2"
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 SRCDATE = "20201207"
 FW_SRCDATE = "20201207"

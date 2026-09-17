@@ -1,6 +1,6 @@
 DESCRIPTION = "Miraclebox HbbTv"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 

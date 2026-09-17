@@ -1,5 +1,5 @@
 SUMMARY = "Multiboot for Hisilicon ${MACHINE}"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PRIORITY = "required"
 SECTION = "base"
 PACKAGE_ARCH = "${MACHINE}"

@@ -1,6 +1,6 @@
 DESCRIPTION = "PLi-FullHD and PLi-FullnightHD skins"
 MAINTAINER = "littlesat"
-LICENSE = "Proprietary"
+LICENSE = "LicenseRef-Proprietary"
 LIC_FILES_CHKSUM = "file://usr/share/enigma2/PLi-FullNightHD/skin.xml;beginline=3;endline=8;md5=1794a55df376114c94b4f8446f467920"
 
 inherit gitpkgv allarch

@@ -1,7 +1,7 @@
 SUMMARY = "libreader for Dags ${SOC_FAMILY}"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 RDEPENDS:${PN} = "libsdl"

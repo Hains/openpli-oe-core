@@ -1,6 +1,6 @@
 DESCIPTION = "S3 cold boot"
 MAINTAINER = "vuplus team"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 SRCDATE = "20140925_p0"
 

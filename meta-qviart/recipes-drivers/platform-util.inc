@@ -1,5 +1,5 @@
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 SRC_URI = " \
     http://downloads.openpli.org/archive/qviart/platform-util-${CHIP}.tar.gz \

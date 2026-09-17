@@ -1,7 +1,7 @@
 DESCRIPTION = "Webkit browser for HbbTV"
 SECTION = "base"
 PRIORITY = "required"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 #require conf/license/license-close.inc
 
 PV = "1.1"

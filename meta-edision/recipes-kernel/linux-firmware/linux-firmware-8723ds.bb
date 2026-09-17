@@ -1,6 +1,6 @@
 SUMMARY = "Realtek 8723D firmware"
 HOMEPAGE = "https://www.realtek.com/"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 COMPATIBLE_MACHINE = "osnino|osninoplus|osninopro"
 

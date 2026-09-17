@@ -1,7 +1,7 @@
 SUMMARY = "blindscan for Octagon Chipset ${SOC_FAMILY}"
 SECTION = "base"
 PRIORITY = "optional"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PROVIDES+ = "virtual/blindscan-dvbs"

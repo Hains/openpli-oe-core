@@ -1,6 +1,6 @@
 DESCRIPTION = "Oscam Streamrelay whitelist"
 MAINTAINER = "AbuBaniaz"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 PV = "2.0+git${SRCPV}"
 PKGV = "2.0+git${GITPKGV}"

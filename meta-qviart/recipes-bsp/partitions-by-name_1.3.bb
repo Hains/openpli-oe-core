@@ -1,7 +1,7 @@
 SUMMARY = "partitions by name"
 DESCRIPTION = "for internal emmc flash which give partitons names in /dev/block/by-name/"
 SECTION = "base"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 PACKAGE_ARH = "${MACHINE_ARCH}"
 
 SRC_URI = "file://partitions-by-name.sh"

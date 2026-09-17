@@ -1,5 +1,5 @@
 DESCRIPTION = "enigma2-plugin-extensions-hbbtv"
-LICENSE = "CLOSED"
+LICENSE = "LicenseRef-LICENSE-CLOSED"
 
 SRCREV = "${AUTOREV}"
 PR = "r1"
