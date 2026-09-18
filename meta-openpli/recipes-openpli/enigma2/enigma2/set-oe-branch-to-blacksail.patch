@@ -6,7 +6,7 @@ index e981464633..b74163d8ad 100644
  		except:
  			branch = ""
  		branch_e2plugins = "?sha=python3"
-+		branch_oe_core = "?sha=wrynose"
++		branch_oe_core = "?sha=blacksail"
  
  		self.project = 0
  		self.projects = [

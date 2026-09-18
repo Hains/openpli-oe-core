@@ -116,7 +116,7 @@ ENIGMA2_BRANCH ?= "scarthgap"
 
 # make the origin overridable from OE config, for local mirroring
 SRC_ORIGIN ?= "git://github.com/OpenPLi/enigma2.git;protocol=https"
-SRC_URI := " ${SRC_ORIGIN};branch=${ENIGMA2_BRANCH} file://set-oe-branch-to-wrynose.patch"
+SRC_URI := " ${SRC_ORIGIN};branch=${ENIGMA2_BRANCH} file://set-oe-branch-to-blacksail.patch"
 
 LDFLAGS:prepend = " -lxml2 "
 
