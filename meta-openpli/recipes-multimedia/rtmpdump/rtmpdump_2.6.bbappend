@@ -3,6 +3,6 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 PROVIDES =+ " librtmp librtmp1"
 
 SRC_URI:append = " \
-	file://ksv.patch;striplevel=0 \
+	file://0001-KSV-patch-2015-12-15.patch \
 	file://iptvplayer_release.patch \
 	"
