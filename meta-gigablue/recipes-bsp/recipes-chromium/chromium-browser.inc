@@ -2,7 +2,7 @@ SUMMARY = "Chromium and YoutubeTV"
 SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "LicenseRef-LICENSE-CLOSED"
-# require conf/license/license-close.inc
+LIC_FILES_CHKSUM = "file://${OPENPLI_BASE}/meta-openpli/licenses/LICENSE-CLOSED;md5=2d5b03b35d4612637d67724b35738dd7"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PV = "1.0"
