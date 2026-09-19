@@ -2,8 +2,6 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 PROVIDES =+ " librtmp librtmp1"
 
-SRC_URI = " \
-	git://git.ffmpeg.org/rtmpdump;protocol=git;branch=master \
-	file://ksv.patch;striplevel=0 \
-	file://iptvplayer_release.patch \
+SRC_URI:append = " \
+	file://0001-KSV-patch-2015-12-15.patch \
 	"
