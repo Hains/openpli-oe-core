@@ -1,6 +1,7 @@
 SUMMARY = "shared library for E2 animation"
 SECTION = "libs"
 LICENSE = "LicenseRef-LICENSE-CLOSED"
+LIC_FILES_CHKSUM = "file://${OPENPLI_BASE}/meta-openpli/licenses/LICENSE-CLOSED;md5=2d5b03b35d4612637d67724b35738dd7"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 DEPENDS:vuduo2 = "libgles-${MACHINE}"

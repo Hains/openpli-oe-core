@@ -1,5 +1,6 @@
 DESCRIPTION = "Vu+ bluetooth plugin"
 LICENSE = "LicenseRef-LICENSE-CLOSED"
+LIC_FILES_CHKSUM = "file://${OPENPLI_BASE}/meta-openpli/licenses/LICENSE-CLOSED;md5=2d5b03b35d4612637d67724b35738dd7"
 
 COMPATIBLE_MACHINE = "^(vuuno4k|vuuno4kse|vusolo4k|vuduo4k|vuduo4kse|vuultimo4k|vuzero4k)$"
 

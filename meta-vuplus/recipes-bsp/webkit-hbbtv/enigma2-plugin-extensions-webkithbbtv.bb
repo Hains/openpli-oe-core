@@ -2,7 +2,7 @@ DESCRIPTION = "E2 HbbTV Plugin"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "LicenseRef-LICENSE-CLOSED"
-#require conf/license/license-close.inc
+LIC_FILES_CHKSUM = "file://${OPENPLI_BASE}/meta-openpli/licenses/LICENSE-CLOSED;md5=2d5b03b35d4612637d67724b35738dd7"
 
 RDEPENDS:${PN} = "vuplus-webkithbbtv-dumpait webkit-hbbtv-browser libupnp"
 
