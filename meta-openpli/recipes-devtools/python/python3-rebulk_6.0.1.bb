@@ -11,6 +11,8 @@ RDEPENDS:${PN} = "python3-regex"
 SRC_URI[md5sum] = "4cd4763a0f4916218e31aeeda69db84f"
 SRC_URI[sha256sum] = "d6df0c8c896e160087c6981f3770ed513ec973a9f4066b9e4b0614eb08ba0ce1"
 
+SRC_URI:append = " file://increase-max-version-uv-build.patch"
+
 inherit pypi python_hatchling
 
 include python3-package-split.inc
