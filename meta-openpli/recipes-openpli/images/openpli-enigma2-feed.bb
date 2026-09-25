@@ -118,7 +118,7 @@ OPTIONAL_PACKAGES += " \
 	openssh \
 	openvpn \
 	openmultiboot \
-	p7zip \
+	7zip \
 	parted \
 	procps \
 	pyload \
