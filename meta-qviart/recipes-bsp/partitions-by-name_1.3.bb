@@ -2,6 +2,7 @@ SUMMARY = "partitions by name"
 DESCRIPTION = "for internal emmc flash which give partitons names in /dev/block/by-name/"
 SECTION = "base"
 LICENSE = "LicenseRef-LICENSE-CLOSED"
+LIC_FILES_CHKSUM = "file://${OPENPLI_BASE}/meta-openpli/licenses/LICENSE-CLOSED;md5=2d5b03b35d4612637d67724b35738dd7"
 PACKAGE_ARH = "${MACHINE_ARCH}"
 
 SRC_URI = "file://partitions-by-name.sh"
