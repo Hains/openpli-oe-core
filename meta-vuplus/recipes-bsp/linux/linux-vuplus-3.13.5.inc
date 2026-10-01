@@ -30,7 +30,7 @@ SRC_URI += "http://downloads.openpli.org/archive/vuplus/stblinux-${KV}.tar.bz2 \
 	file://hvr-9x5-19x5-22x5-kernel-3.13.patch \
 	${@bb.utils.contains("MACHINE_FEATURES", "dvbproxy", "file://linux_dvb_adapter.patch", "", d)} \
 	file://fix-build-with-binutils-2.41.patch \
-	file://kernel-add-support-for-gcc15.patch \
+	file://kernel-add-support-for-gcc16.patch \
 	file://defconfig \
 	"
 

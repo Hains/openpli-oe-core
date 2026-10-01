@@ -29,7 +29,7 @@ SRC_URI += "http://downloads.openpli.org/archive/vuplus/stblinux-${KV}.tar.bz2 \
 	file://2-2-stv090x-on-tuning-lock-return-correct-tuned-paramaters-like-freq-sr-fec-rolloff-etc.patch \
 	file://add-attributes-fix-modules-compile.patch \
 	file://makefile-silence-warnings.patch \
-	file://kernel-add-support-for-gcc15.patch \
+	file://kernel-add-support-for-gcc16.patch \
 	file://fix-build-with-binutils-2.41.patch \
 	file://port-to-c23.patch \
 	file://fix-int-conversion-without-casting.patch \
