@@ -6,6 +6,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 RDEPENDS:${PN} += "libxml2"
 
 LICENSE = "LicenseRef-LICENSE-CLOSED"
+LIC_FILES_CHKSUM = "file://${OPENPLI_BASE}/meta-openpli/licenses/LICENSE-CLOSED;md5=2d5b03b35d4612637d67724b35738dd7"
 
 PROVIDES += "virtual/blindscan-dvbc"
 RPROVIDES:${PN} += "virtual-blindscan-dvbc"
