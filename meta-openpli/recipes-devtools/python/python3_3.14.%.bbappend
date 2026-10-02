@@ -1,8 +1,8 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-PV = "3.14.7"
+PV = "3.14.8"
 
-SRC_URI[sha256sum] = "3b48dac8fb59f62eaa67ac83c1eb12bda1b7a08406dd286e252c11a66be27f81"
+SRC_URI[sha256sum] = "c2215904f02b175596dc49351585104f4bc20341e1c47378b26a2c274360ce73"
 
 SRC_URI += "file://importlib.patch"
 SRC_URI:remove = "file://CVE-2026-11940.patch file://CVE-2026-11972.patch"
