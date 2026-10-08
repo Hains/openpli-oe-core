@@ -17,15 +17,15 @@ MACHINE_EXTRA_RRECOMMENDS = " \
 MACHINE_EXTRA_RDEPENDS += "\
 "
 
-EXTRA_IMAGEDEPENDS += "\
-	enigma2-plugin-systemplugins-remotecontrolcode \
-	enigma2-plugin-extensions-addstreamurl \
-	vuplus-tuner-turbo \
-	vuplus-tuner-turbo2 \
-	hmp-usb-dvb-t2-c-arm \
-	${@bb.utils.contains("MACHINE_FEATURES", "bluetooth", "enigma2-plugin-systemplugins-bluetoothsetup", "", d)} \
-	${@bb.utils.contains("MACHINE_FEATURES", "bcmwifi", "vuplus-wifi-util-${MACHINE}", "", d)} \
-"
+#EXTRA_IMAGEDEPENDS += "\
+#	enigma2-plugin-systemplugins-remotecontrolcode \
+#	enigma2-plugin-extensions-addstreamurl \
+#	vuplus-tuner-turbo \
+#	vuplus-tuner-turbo2 \
+#	hmp-usb-dvb-t2-c-arm \
+#	${@bb.utils.contains("MACHINE_FEATURES", "bluetooth", "enigma2-plugin-systemplugins-bluetoothsetup", "", d)} \
+#	${@bb.utils.contains("MACHINE_FEATURES", "bcmwifi", "vuplus-wifi-util-${MACHINE}", "", d)} \
+#"
 
 TARGET_ARCH = "arm"
 DEFAULTTUNE = "armv7ahf-neon"
