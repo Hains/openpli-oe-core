@@ -1,15 +1,13 @@
 require vuplus-platform-util.inc
 
-RDEPENDS:${PN} += "mmc-utils"
+RDEPENDS:${PN} += "mmc-utils-vu"
 
 PV = "18.1"
 SRCDATE = "20191218"
 SRCDATE_PR = "r0"
-PR:append = ".2"
+PR:append = ".3"
 
-SRC_URI += "\
-	file://bp3flash.tar.gz \
-"
+SRC_URI += " file://bp3flash.py"
 
 do_install:append() {
 	install -m 0755 ${UNPACKDIR}/bp3flash.py ${D}${bindir}
