@@ -63,8 +63,8 @@ SRC_URI += "https://source.mynonpublic.com/vuplus.de/linux/vuplus-linux-${PV}-${
 
 inherit kernel machine_kernel_pr
 
-S = "${WORKDIR}/linux-${PV}"
-B = "${WORKDIR}/build"
+S = "${UNPACKDIR}/linux-${PV}"
+B = "${UNPACKDIR}/build"
 
 export OS = "Linux"
 KERNEL_IMAGETYPE = "zImage"
@@ -73,7 +73,6 @@ KERNEL_IMAGEDEST = "tmp"
 KERNEL_OUTPUT = "arch/${ARCH}/boot/${KERNEL_IMAGETYPE}"
 
 FILES:${KERNEL_PACKAGE_NAME}-image = "/${KERNEL_IMAGEDEST}/zImage /${KERNEL_IMAGEDEST}/vufindkerneldevice.py"
-
 
 kernel_do_configure:prepend() {
         install -d ${B}/usr
