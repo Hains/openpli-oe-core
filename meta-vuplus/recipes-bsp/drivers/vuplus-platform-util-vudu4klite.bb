@@ -26,7 +26,7 @@ SRC_URI = "https://code.vuplus.de/download/release/platform-util/platform-util-$
 
 INHIBIT_PACKAGE_STRIP = "1"
 
-S = "${WORKDIR}/platform"
+S = "${UNPACKDIR}/platform"
 
 do_install() {
     install -d ${D}/home/root/platform

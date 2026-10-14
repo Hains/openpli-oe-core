@@ -19,7 +19,7 @@ SRC_URI = " \
     https://code.vuplus.de/download/release/bt/vuplus-bluetooth-util-${MACHINE}-${PR}.zip \
 "
 
-S = "${WORKDIR}/vuplus-bluetooth-util-${MACHINE}"
+S = "${UNPACKDIR}/vuplus-bluetooth-util-${MACHINE}"
 
 do_package_qa() {
 }
