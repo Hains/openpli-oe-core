@@ -28,6 +28,7 @@ EXTRA_IMAGEDEPENDS += "\
 	vuplus-tuner-turbo \
 	vuplus-tuner-turbo2 \
 	hmp-usb-dvb-t2-c-arm \
+	vuplus-bluetooth-keymaps \
 	${@bb.utils.contains("MACHINE_FEATURES", "bcmwifi", "vuplus-wifi-util-${MACHINE}", "", d)} \
 "
 
