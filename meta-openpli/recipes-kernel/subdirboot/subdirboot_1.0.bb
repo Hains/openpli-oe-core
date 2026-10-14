@@ -7,7 +7,7 @@ SRC_URI = " \
     file://Makefile \
 "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 inherit klibc
 
