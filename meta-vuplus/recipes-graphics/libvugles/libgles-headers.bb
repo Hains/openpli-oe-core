@@ -8,7 +8,7 @@ SRC_URI = "https://code.vuplus.de/download/release/libgles/libgles-headers.zip"
 SRC_URI[md5sum] = "cd28a6e2d862354c2854b9278fd32365"
 SRC_URI[sha256sum] = "4cfda443d72ec56965f989b9306c0af6f85cbac55fc6a70b0d081ea605c192aa"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_compile() {
 }

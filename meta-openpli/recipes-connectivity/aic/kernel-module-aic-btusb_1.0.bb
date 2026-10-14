@@ -11,7 +11,7 @@ SRC_URI = " \
     file://aic_btusb.zip \
     "
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 EXTRA_OEMAKE = "LINUX_SRC=${STAGING_KERNEL_DIR} KDIR=${STAGING_KERNEL_DIR} KSRC=${STAGING_KERNEL_DIR}"
 
