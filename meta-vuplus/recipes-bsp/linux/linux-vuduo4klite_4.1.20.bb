@@ -76,9 +76,9 @@ FILES:${KERNEL_PACKAGE_NAME}-image = "/${KERNEL_IMAGEDEST}/zImage /${KERNEL_IMAG
 
 kernel_do_configure:prepend() {
         install -d ${B}/usr
-        install -m 0644 ${WORKDIR}/initramfs-subdirboot.cpio.gz ${B}/
-        if [ -e ${WORKDIR}/defconfig_initrd ]; then
-            mv ${WORKDIR}/defconfig_initrd ${WORKDIR}/defconfig
+        install -m 0644 ${UNPACKDIR}/initramfs-subdirboot.cpio.gz ${B}/
+        if [ -e ${UNPACKDIR}/defconfig_initrd ]; then
+            mv ${UNPACKDIR}/defconfig_initrd ${WORKDIR}/defconfig
         fi
 }
 
