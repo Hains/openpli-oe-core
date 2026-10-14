@@ -14,7 +14,7 @@ PV = "5.0+git"
 PKGV = "5.0+git${GITPKGV}"
 PR = "r1"
 
-SRC_URI = "git://github.com/oe-alliance-drivers/aic8800.git;protocol=https;branch=master;destsuffix=s"
+SRC_URI = "git://github.com/oe-alliance-drivers/aic8800.git;protocol=https;branch=master"
 SRCREV = "${AUTOREV}"
 
 UNPACKDIR = "${WORKDIR}/u"
