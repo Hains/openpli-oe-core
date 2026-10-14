@@ -54,8 +54,7 @@ SRC_URI += "https://source.mynonpublic.com/vuplus.de/linux/vuplus-linux-${PV}-${
     file://0001-stv090x-optimized-TS-sync-control.patch \
     file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
     file://0004-make-yyloc-declaration-extern.patch \
-    file://kernel-add-support-for-gcc13.patch \
-    file://kernel-add-support-for-gcc14.patch \
+    file://kernel-add-support-for-gcc15.patch \
     file://0003-uaccess-dont-mark-register-as-const.patch \
     file://add-partition-specific-uevent-callbacks-for-partition-info.patch \
     file://linux3.4-ARM-8933-1-replace-Sun-Solaris-style-flag-on-section_l.patch \
