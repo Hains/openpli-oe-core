@@ -4,11 +4,11 @@ PRIORITY = "optional"
 LICENSE = "CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
-COMPATIBLE_MACHINE = "^(vuduo4klite)$"
+COMPATIBLE_MACHINE = "^(vuduo4k|vuduo4kse|vusolo4k|vuultimo4k|vuuno4k|vuuno4kse|vuzero4k|vuduo4klite)$"
 
 SRC_URI = "file://70-vuplus-bluetooth-rcu.hwdb"
 
-S = "${UNPACKDIR}"
+S = "${WORKDIR}"
 
 RDEPENDS:${PN} = "eudev-hwdb"
 

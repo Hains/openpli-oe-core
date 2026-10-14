@@ -22,6 +22,7 @@ EXTRA_IMAGEDEPENDS += "\
 	enigma2-plugin-extensions-addstreamurl \
 	vuplus-tuner-turbo \
 	vuplus-tuner-turbo2 \
+	vuplus-bluetooth-keymaps \
 	${@bb.utils.contains("MACHINE_FEATURES", "bcmwifi", "vuplus-wifi-util-${MACHINE}", "", d)} \
 "
 
