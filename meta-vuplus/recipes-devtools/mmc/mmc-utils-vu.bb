@@ -20,7 +20,7 @@ SRCREV = "b4fe0c8c0e57a74c01755fa9362703b60d7ee49d"
 SRC_URI += " file://0001-lsmmc-replace-strncpy-with-memmove-on-overlapping-me.patch"
 PR = "r1"
 
-S = "${WORKDIR}/git"
+S = "${UNPACKDIR}/git"
 
 do_install() {
     install -d ${D}${bindir}

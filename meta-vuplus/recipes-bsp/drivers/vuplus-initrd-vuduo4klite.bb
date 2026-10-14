@@ -17,7 +17,7 @@ SRC_URI[sha256sum] = "4dccac8c0e69e510e33ad4697130a0d248087503cd8b3066ceba7b55c6
 
 
 SRC_URI += "file://bootlogo.sh file://splash_auto.bin "
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install:append() {
     install -d ${D}/boot

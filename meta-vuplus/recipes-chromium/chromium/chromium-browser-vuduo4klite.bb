@@ -23,7 +23,7 @@ DEPENDS = "nss"
 RDEPENDS:${PN} = "nspr nss libxslt libcurl libudev libcrypto-compat-1.0.0 libxml2-qt"
 RDEPENDS:${PN} += "libgles-${MACHINE}"
 
-S = "${WORKDIR}"
+S = "${UNPACKDIR}"
 
 do_install() {
 	install -d ${D}/usr/local/chromium
