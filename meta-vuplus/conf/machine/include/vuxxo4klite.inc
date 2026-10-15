@@ -22,7 +22,6 @@ EXTRA_IMAGEDEPENDS += "\
 	enigma2-plugin-extensions-addstreamurl \
 	vuplus-tuner-turbo \
 	vuplus-tuner-turbo2 \
-	hmp-usb-dvb-t2-c-arm \
 	${@bb.utils.contains("MACHINE_FEATURES", "bcmwifi", "vuplus-wifi-util-${MACHINE}", "", d)} \
 "
 
