@@ -1,0 +1,16 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -245,10 +245,9 @@
+ if(STATIC)
+     # Full static linking with -static flag
+     target_link_options(minisatip PRIVATE -static)
+-    # Add atomic library for static MIPS builds
+-    if(CMAKE_CXX_COMPILER_TARGET MATCHES "mipsel")
+-        list(APPEND MINISATIP_LIBS atomic)
+-    endif()
++endif()
++if(CMAKE_SYSTEM_PROCESSOR MATCHES "^mips")
++    list(APPEND MINISATIP_LIBS atomic)
+ endif()
+ 
+ target_link_libraries(minisatip PRIVATE ${MINISATIP_LIBS})

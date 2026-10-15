@@ -9,6 +9,7 @@ RDEPENDS:${PN} = "libdvbcsa openssl"
 SRC_URI = " \
     git://github.com/catalinii/minisatip.git;protocol=https;branch=master; \
     file://drop-stacktrace.patch \
+    ${@bb.utils.contains("TARGET_ARCH", "mipsel", "file://fix-mips-atomic.patch", "", d)} \
     file://minisatip.sh \
     "
 
