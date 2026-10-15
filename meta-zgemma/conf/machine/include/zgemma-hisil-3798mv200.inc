@@ -59,7 +59,7 @@ IMAGE_CMD:ubi:append = " \
 	cp ${DEPLOY_DIR_IMAGE}/uImage ${IMGDEPLOYDIR}/${IMAGEDIR}/${MACHINE}/uImage; \
 	cp ${IMGDEPLOYDIR}/zgemma-partitions-${MACHINE}/${MACHINE}/bootoptions.yaffs ${IMGDEPLOYDIR}/${IMAGEDIR}/${MACHINE}/bootoptions.yaffs; \
 	cp ${DEPLOY_DIR_IMAGE}/zgemma-partitions-${MACHINE}/fastboot.bin ${IMGDEPLOYDIR}/${IMAGEDIR}/fastboot.bin; \
-	if [ "${MACHINE}" == "h8se" ]; then \
+	if [ "${MACHINE}" = "h8se" ]; then \
 		cp ${DEPLOY_DIR_IMAGE}/zgemma-partitions-${MACHINE}/update_bootargs_${MACHINE}.bin ${IMGDEPLOYDIR}/${IMAGEDIR}/update_bootargs_${MACHINE}.bin; \
 	else \
 		cp ${DEPLOY_DIR_IMAGE}/zgemma-partitions-${MACHINE}/update_bootargs_${MACHINE}.bin ${IMGDEPLOYDIR}/${IMAGEDIR}/bootargs.bin; \
