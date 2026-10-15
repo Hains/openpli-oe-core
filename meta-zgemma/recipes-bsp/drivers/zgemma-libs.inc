@@ -34,6 +34,9 @@ do_install() {
 	rm -f ${D}${libdir}/hisilicon/libcrypto.so.* ${D}${libdir}/hisilicon/libssl.so.*
 }
 
+do_package_qa() {
+}
+
 FILES:${PN} = "${libdir}/hisilicon/*"
 FILES:${PN}-dev = ""
 
