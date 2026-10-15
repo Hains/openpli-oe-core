@@ -5,7 +5,7 @@ RDEPENDS:${PN} += "gptfdisk mmc-utils"
 PV="18.1"
 SRCDATE = "20191218"
 SRCDATE_PR = "r0"
-PR_append = ".4"
+PR:append = ".4"
 
 SRC_URI += "\
 	file://bp3flash.tar.gz \
