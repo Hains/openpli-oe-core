@@ -58,7 +58,6 @@ SRC_URI += "https://source.mynonpublic.com/vuplus.de/linux/vuplus-linux-${PV}-${
     file://0003-uaccess-dont-mark-register-as-const.patch \
     file://add-partition-specific-uevent-callbacks-for-partition-info.patch \
     file://linux3.4-ARM-8933-1-replace-Sun-Solaris-style-flag-on-section_l.patch \
-    file://defconfig \
 "
 
 inherit kernel machine_kernel_pr
@@ -78,7 +77,7 @@ kernel_do_configure:prepend() {
         install -d ${B}/usr
         install -m 0644 ${UNPACKDIR}/initramfs-subdirboot.cpio.gz ${B}/
         if [ -e ${UNPACKDIR}/defconfig_initrd ]; then
-            mv ${UNPACKDIR}/defconfig_initrd ${WORKDIR}/defconfig
+            mv ${UNPACKDIR}/defconfig_initrd ${UNPACKDIR}/defconfig
         fi
 }
 
