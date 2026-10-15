@@ -1,6 +1,6 @@
 require vuplus-platform-util.inc
 
-RDEPENDS_${PN} += "gptfdisk mmc-utils"
+RDEPENDS:${PN} += "gptfdisk mmc-utils"
 
 PV="18.1"
 SRCDATE = "20191218"
