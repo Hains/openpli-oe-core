@@ -1,16 +1,25 @@
+From 44a1e9f8e305b45576d67a3b35e1662b569d7149 Mon Sep 17 00:00:00 2001
+From: atefganm <atef_anim_1974@yahoo.com>
+Date: Fri, 16 Oct 2026 20:38:21 +0300
+Subject: [PATCH] fix-missing-filereadlines-method-openpli
+
+---
+ src/PluginUpgrade.py | 19 +++++++++++++++----
+ 1 file changed, 15 insertions(+), 4 deletions(-)
+
 diff --git a/src/PluginUpgrade.py b/src/PluginUpgrade.py
-index f3ac94e..5fe2bb7 100755
+index bbc23c5..9b7e617 100644
 --- a/src/PluginUpgrade.py
 +++ b/src/PluginUpgrade.py
-@@ -9,7 +9,6 @@ import subprocess
- from Components.Console import Console
+@@ -10,7 +10,6 @@ from Components.Console import Console
  from Screens.MessageBox import MessageBox
  from Screens.Standby import TryQuitMainloop, QUIT_RESTART
+ from Tools import Notifications
 -from Tools.Directories import fileReadLines
  from twisted.internet import threads
  
  from .Version import PLUGIN
-@@ -42,7 +41,11 @@ def _isVersionNewer(candidate_version, current_version):
+@@ -43,7 +42,11 @@ def _isVersionNewer(candidate_version, current_version):
  
  
  def _opkgListsDir():
@@ -23,7 +32,7 @@ index f3ac94e..5fe2bb7 100755
          parts = line.split()
          if len(parts) >= 2 and parts[-2] == "lists_dir":
              return parts[-1]
-@@ -54,7 +57,11 @@ def getInstalledPackageVersion(package_name):
+@@ -55,7 +58,11 @@ def getInstalledPackageVersion(package_name):
      if not os.path.exists(control_file):
          return None
  
@@ -36,7 +45,7 @@ index f3ac94e..5fe2bb7 100755
          if line.startswith("Version:"):
              return line.split("Version:", 1)[1].strip().split("+", 1)[0]
  
-@@ -100,7 +107,11 @@ def getAvailablePackageVersion(package_name):
+@@ -112,7 +119,11 @@ def _availablePackageVersionFromLists(package_name):
      latest_version = None
      in_package = False
  
@@ -49,3 +58,6 @@ index f3ac94e..5fe2bb7 100755
          if line.startswith("Package:"):
              in_package = line.split(":", 1)[1].strip() == package_name
          elif in_package and line.startswith("Version:"):
+-- 
+2.43.0
+
