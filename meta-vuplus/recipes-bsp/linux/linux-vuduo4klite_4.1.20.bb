@@ -84,7 +84,7 @@ kernel_do_configure:prepend() {
 kernel_do_install:append() {
         install -d ${D}/${KERNEL_IMAGEDEST}
         install -m 0755 ${KERNEL_OUTPUT} ${D}/${KERNEL_IMAGEDEST}
-        install -m 0755 ${WORKDIR}/vufindkerneldevice.py ${D}/${KERNEL_IMAGEDEST}
+        install -m 0755 ${UNPACKDIR}/vufindkerneldevice.py ${D}/${KERNEL_IMAGEDEST}
 }
 
 kernel_do_compile() {
