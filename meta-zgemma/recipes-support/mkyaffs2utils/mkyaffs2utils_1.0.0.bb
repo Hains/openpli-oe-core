@@ -1,7 +1,7 @@
 SUMMARY = "Yet Another Flash File System"
 DESCRIPTION = "Tools for managing 'yaffs' file systems for bootmenu."
 
-LICENSE = "GPL-2.0-only & LGPL-2.1-only"
+LICENSE = "GPL-2.0-only AND LGPL-2.1-only"
 LIC_FILES_CHKSUM = " \
     file://mkyaffs2image/mkyaffs2image.c;beginline=1;endline=16;md5=f3b785ac05385cddc907aa5688453b9b \
     file://mkyaffs2image/yportenv.h;beginline=1;endline=15;md5=49a5531df3851698d06736e8ccce2b87 \
