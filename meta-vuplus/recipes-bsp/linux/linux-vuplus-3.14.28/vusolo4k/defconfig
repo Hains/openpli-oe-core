@@ -740,7 +740,7 @@ CONFIG_NET_FLOW_LIMIT=y
 # CONFIG_HAMRADIO is not set
 # CONFIG_CAN is not set
 # CONFIG_IRDA is not set
-CONFIG_BT=y
+CONFIG_BT=m
 # CONFIG_BT_RFCOMM is not set
 # CONFIG_BT_BNEP is not set
 # CONFIG_BT_HIDP is not set
@@ -748,7 +748,7 @@ CONFIG_BT=y
 #
 # Bluetooth device drivers
 #
-CONFIG_BT_HCIBTUSB=y
+# CONFIG_BT_HCIBTUSB is not set
 # CONFIG_BT_HCIBTSDIO is not set
 # CONFIG_BT_HCIUART is not set
 # CONFIG_BT_HCIBCM203X is not set
