@@ -12,6 +12,8 @@ SRC_URI = " \
 	file://opkg-unbuild \
 	"
 
+S = "${UNPACKDIR}"
+
 do_install(){
 	install -d ${D}/usr/bin
 	install -m 755 ${WORKDIR}/opkg-build ${D}/usr/bin/opkg-build
