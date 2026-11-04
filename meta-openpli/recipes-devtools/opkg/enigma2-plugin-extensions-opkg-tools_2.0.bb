@@ -16,6 +16,6 @@ S = "${UNPACKDIR}"
 
 do_install(){
 	install -d ${D}/usr/bin
-	install -m 755 ${WORKDIR}/opkg-build ${D}/usr/bin/opkg-build
-	install -m 755 ${WORKDIR}/opkg-unbuild ${D}/usr/bin/opkg-unbuild
+	install -m 755 ${UNPACKDIR}/opkg-build ${D}/usr/bin/opkg-build
+	install -m 755 ${UNPACKDIR}/opkg-unbuild ${D}/usr/bin/opkg-unbuild
 }
