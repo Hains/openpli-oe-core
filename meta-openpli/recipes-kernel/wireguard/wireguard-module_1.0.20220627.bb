@@ -8,7 +8,7 @@ SRC_URI = " \
     file://0001-fix-fallback-macro-missing.patch \
     "
 
-SRC_URI[sha256sum] = "362d412693c8fe82de00283435818d5c5def7f15e2433a07a9fe99d0518f63c0"
+SRC_URI[sha256sum] = "19b181e5c7d2260c23ecad4ad324425fd8e88200d97a885a2c7d4bd26cd61461"
 
 S = "${UNPACKDIR}/wireguard-linux-compat-${PV}/src"
 
