@@ -19,7 +19,7 @@ SRC_URI += "http://downloads.openpli.org/archive/gi/linux-${PV}.tar.xz \
 	file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
 	file://0003-dont-mark-register-as-const.patch \
 	file://fix-build-with-binutils-2.41.patch \
-	file://kernel-add-support-for-gcc15.patch \
+	file://kernel-add-support-for-gcc16.patch \
 	file://defconfig \
 	"
 
