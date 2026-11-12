@@ -15,3 +15,5 @@ RDEPENDS:${PN} = " \
 	python3-unixadmin \
 	python3-lxml \
 	"
+
+SRC_URI:append = " file://drop-python3-six.patch"
