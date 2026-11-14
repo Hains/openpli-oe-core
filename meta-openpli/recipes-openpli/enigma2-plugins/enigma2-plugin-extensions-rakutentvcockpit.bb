@@ -13,7 +13,7 @@ DEPENDS = "gettext-native"
 PV = "0.11.5"
 PKGV = "0.11.5+git${GITPKGV}"
 
-SRC_URI = "git://github.com/OpenCockpit/RakutenTVCockpit.git;protocol=https;branch=master \
+SRC_URI = "git://github.com/OpenCockpit/RakutenTVCockpit.git;protocol=https;branch=main \
            file://fix-missing-filereadlines-method-openpli.patch \
            "
 
