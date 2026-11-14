@@ -26,7 +26,7 @@ RDEPENDS:${PN} = "python3-core \
 	python3-trio-websocket \
 "
 
-inherit setuptools3 python3-dir python3-compileall gitpkgv
+inherit python_hatchling python3-dir python3-compileall gitpkgv
 
 PV = "8.5.0+git"
 PKGV = "8.5.0+git${GITPKGV}"
