@@ -9,6 +9,4 @@ PKGV = "2.0+git${GITPKGV}"
 
 SRC_URI = "git://github.com/ims21/TimerPlanner.git;protocol=https;branch=main"
 
-S="${WORKDIR}/git"
-
 inherit setuptools3-openplugins python3-compileall
