@@ -20,7 +20,7 @@ RDEPENDS:${PN} = "\
 "
 RRECOMMENDS:${PN} = "unrar"
 
-inherit gittag update-rc.d
+inherit gittag update-rc.d setuptools3_legacy
 
 PV = "git"
 PKGV = "${GITPKGVTAG}"
@@ -48,3 +48,5 @@ do_install() {
 }
 
 include python3-package-split.inc
+
+INSANE_SKIP = "pep517-backend"
