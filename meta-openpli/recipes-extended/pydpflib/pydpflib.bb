@@ -13,7 +13,6 @@ SRC_URI = "git://github.com/atvcaptain/dpf-ax.git;branch=dreamlayers;protocol=ht
 
 inherit pkgconfig gitpkgv python3native
 
-SRCREV = "${AUTOREV}"
 PV = "4.0.+git"
 PKGV = "4.0.+git${GITPKGV}"
 

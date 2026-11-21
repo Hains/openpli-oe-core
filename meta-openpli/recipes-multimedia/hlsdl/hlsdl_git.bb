@@ -11,7 +11,6 @@ PV = "1.0+git"
 PKGV = "1.0+git${GITPKGV}"
 
 SRC_URI = "git://github.com/selsta/hlsdl.git;protocol=git;protocol=https;branch=master"
-SRCREV = "${AUTOREV}"
 
 SOURCE_FILES = "src/main.c"
 SOURCE_FILES =+ "src/aes_openssl.c"
