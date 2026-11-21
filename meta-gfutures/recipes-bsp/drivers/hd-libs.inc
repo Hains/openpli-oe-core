@@ -8,7 +8,7 @@ RDEPENDS:${PN} = "libbluray libcrypto-compat"
 
 VER ?= "${@bb.utils.contains('TARGET_ARCH', 'aarch64', '64' , '', d)}"
 
-SRC_URI = "http://downloads.openpli.org/archive/gfutures/${MACHINE}-libs${VER}-${SRCDATE}.zip"
+SRC_URI = "http://downloads.openpli.org/archive/hisilicon/hisilicon-libs${VER}-${SRCDATE}.zip"
 
 S = "${UNPACKDIR}"
 
@@ -35,5 +35,6 @@ do_package_qa() {
 
 FILES:${PN} = "${libdir}/hisilicon/*"
 FILES:${PN}-dev = ""
+RPROVIDES:${PN} += "libhi_common.so"
 
 INSANE_SKIP:${PN} += "ldflags already-stripped dev-so"
