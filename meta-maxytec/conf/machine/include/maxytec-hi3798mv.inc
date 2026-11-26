@@ -4,6 +4,9 @@ KERNEL_MODULE_AUTOLOAD += "xfs"
 # We know about rtc
 MACHINE_FEATURES_OPTED_OUT = "rtc"
 
+MACHINEOVERRIDES =. "kernel-4.4:"
+MACHINEOVERRIDES =. "hi-mali:"
+
 PREFERRED_VERSION_linux-maxytec = "4.4.176"
 
 #Provider
