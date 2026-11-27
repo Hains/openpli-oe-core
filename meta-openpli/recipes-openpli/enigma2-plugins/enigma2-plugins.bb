@@ -34,7 +34,7 @@ PKGV = "git${GITPKGV}"
 
 # make the origin overridable from OE config, for local mirroring
 SRC_ORIGIN ?= "git://github.com/OpenPLi/${BPN}.git;protocol=https"
-SRC_URI := "${SRC_ORIGIN};branch=python3 "
+SRC_URI := "${SRC_ORIGIN};branch=python3 file://get-rid-of-python3-six.patch"
 
 # Main package should be empty
 FILES:${PN} = ""
